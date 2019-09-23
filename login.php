@@ -1,0 +1,25 @@
+<?php
+session_start();
+$captcha=$_GET['captcha'];
+if($_SESSION['login']=='yes' and $_SESSION['captcha']==$captcha)
+{
+    session_destroy();
+    $user=$_GET["user"];
+    if($user=="admin")
+    {
+       session_start();
+       $_SESSION['user']=$user;
+       header('location:home.php');
+    }
+    else
+    {
+       session_start();
+       $_SESSION['user']=$user;
+       header('location:home.php');
+    }
+}
+else
+{
+	header("location:loginform.php?invalidcaptcha");
+}
+?>
