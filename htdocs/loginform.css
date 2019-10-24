@@ -1,0 +1,26 @@
+.textheading
+{
+font-weight:bold;
+font-family:arial;
+color:#69899f;
+padding-left:20px;
+font-size:25px;
+}
+.tbox
+{
+height:45px;
+width:250px;
+font-size:18px;
+border-top:0;
+border-left:0;
+border-right:0;
+border-bottom:1px solid;
+}
+.tb
+{
+	padding-left:60px;
+}
+.td
+{
+	padding-left:30px;
+}
